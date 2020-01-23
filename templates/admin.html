@@ -1,0 +1,19 @@
+{% extends 'base.html'%} {% block content %}
+<hr>
+
+
+<div class="container" style="padding-top:20px;">
+    {% if messages%}
+    <div class="alert alert-success" role="alert">
+        {{messages}}
+    </div>
+    {% endif %}
+    <ol type="1">
+        <li style="font-size: x-large;"><a href="{% url 'add_friend_page' %}">Add Friend</a></li>
+        <li style="font-size: x-large;"><a href="{% url 'view_friends' %}">View Friends</a></li>
+        <li style="font-size: x-large;"><a href="{% url 'add_gallery' %}">Add Gallery</a></li>
+        <li style="font-size: x-large;"><a href="{% url 'view_gallery' %}">View Gallery</a></li>
+    </ol>
+</div>
+
+<hr> {% endblock %}

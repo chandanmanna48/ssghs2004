@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+
+<div style="margin: 0;
+padding: 0;
+display: flex;
+justify-content:center;
+align-items: center;
+min-height: 100vh;
+background: #651b88;
+font-family: sans-serif;">
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            {% for friend in friends %}
+            <div class="card card-custom mx-2 mb-3">
+                <div class="imgBx">
+                    <img src="{{friend.image.url}}" alt="images">
+                </div>
+                <div class="details">
+                    <h2>{{friend.name}}<br><span>{{friend.about}}</span></h2>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    {% endblock %}
