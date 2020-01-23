@@ -59,6 +59,11 @@ def login(request):
     if email == 'chandanmanna48@gmail.com' and password == 'raju5678':
         messages = 'Logged In Successfully '
         return render(request,'admin.html',{'messages':messages})
+
+    elif email == 'jitendrasahu853@gmail.com' and password == 'ssghs2020':
+        messages = 'Logged In Successfully '
+        return render(request,'admin.html',{'messages':messages})
+
     else:
         messages = 'Invalid Email or Password , Try Again ..'
         return render(request,'admin_login.html',{'messages':messages})
