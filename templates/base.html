@@ -5,6 +5,10 @@
     <title> Students </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Anton" rel="stylesheet">
 
@@ -39,6 +43,21 @@
             top: 0;
             left: 0;
             min-height: 550px;
+        }
+        
+        .map-container-5 {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        
+        .map-container-5 iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
         }
     </style>
 
@@ -90,66 +109,63 @@
     <footer class="footer-area">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-sm-6 col-md-6 col-xl-3">
-                    <div class="single-footer-widget footer_1">
-                        <a href="index.html"> <img src="img/footer_logo.png" alt=""> </a>
-                        <p>But when shot real her. Chamber her one visite removal six sending himself boys scot exquisite existend an </p>
-                        <p>But when shot real her hamber her </p>
+                <div class="card" style="width: 18rem;height:25rem;margin-top:5px;">
+
+                    <img class="card-img-top" src="{% static 'img/about_img_2.png'%}" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title font-weight-bold" style="color: rgb(248, 112, 15);">VISIONARY</h3>
+                        <h5 class="card-title">Jitendra Sahu</h5>
+
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-xl-4">
-                    <div class="single-footer-widget footer_2">
-                        <h4>Newsletter</h4>
-                        <p>Stay updated with our latest trends Seed heaven so said place winged over given forth fruit.
-                        </p>
-                        <form action="#">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Enter email address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="button"><i class="ti-angle-right"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="social_icon">
-                            <a href="#"> <i class="ti-facebook"></i> </a>
-                            <a href="#"> <i class="ti-twitter-alt"></i> </a>
-                            <a href="#"> <i class="ti-instagram"></i> </a>
-                            <a href="#"> <i class="ti-skype"></i> </a>
+                    <div class="card" style="width: 18rem;height:25rem;margin-top:5px;">
+
+                        <img class="card-img-top" src="{% static 'img/about_img_2.png'%}" alt="Card image cap">
+                        <div class="card-body">
+
+                            <h3 class="card-title font-weight-bold" style="color: rgb(248, 112, 15);">DEVELOPER</h3>
+                            <h5 class="card-title">Chandan Kumar Manna</h5>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-xl-3">
-                    <div class="single-footer-widget footer_3">
-                        <h4>Instagram</h4>
-                        <div class="footer_img">
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_1.png" alt="">
-                                <a href="#"><i class="ti-instagram"></i></a>
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4">
+
+                            <!--Card-->
+                            <div class="card card-cascade narrower" style="height:25rem;margin-top:5px;">
+
+                                <!--Card image-->
+                                <div class="view view-cascade gradient-card-header blue-gradient">
+                                    <h5 class="mb-0" style="font-weight: bold;text-align:center;color:rgb(240, 92, 6);font-size:20px;">Reach Us</h5>
+                                </div>
+                                <!--/Card image-->
+
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+
+                                    <!--Google map-->
+                                    <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14973.333773522727!2d85.79741315!3d20.24500135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1579802507841!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;"
+                                            allowfullscreen=""></iframe>
+                                    </div>
+
+                                </div>
+                                <!--/.Card content-->
+
                             </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_2.png" alt="">
-                                <a href="#"><i class="ti-instagram"></i></a>
-                            </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_3.png" alt="">
-                                <a href="#"><i class="ti-instagram"></i></a>
-                            </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_4.png" alt="">
-                                <a href="#"><i class="ti-instagram"></i></a>
-                            </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_5.png" alt="">
-                                <a href="#"><i class="ti-instagram"></i></a>
-                            </div>
-                            <div class="single_footer_img">
-                                <img src="img/footer_img/footer_img_6.png" alt="">
-                                <a href="#"><i class="ti-instagram"></i></a>
-                            </div>
+                            <!--/.Card-->
+
                         </div>
+                        <!--Grid column-->
+
                     </div>
+                    <!--Grid row-->
                 </div>
             </div>
 
